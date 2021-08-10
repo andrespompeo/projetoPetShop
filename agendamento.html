@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato - PetShop Pompeo</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-agendamento.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $("#calendario").datepicker({
+                numberOfMonths: 2
+            },
+
+            $("#calendario").datepicker({dateFormat: 'dd/mm/yy'}),
+           
+            );
+        });
+        </script>
+
+    </head>
+
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="agendamento.html">Agendamento de Banho</a></li>
+                    <li><a href="https://wa.me/5511966296259">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="nomepet">Nome do Pet</label>
+                <input type="text" id="nomepet" class="input-padrao" required>
+
+                <label for="racapet">Raça do Pet</label>
+                <input type="text" id="racapet" class="input-padrao" required>
+
+                    <div>
+                        <p>Tamanho do Pet</p>
+                        <label for="radio-p"><input type="radio" name="tamanho" value="pequeno" id="radio-p">Pequeno</label>
+                        
+                        <label for="radio-m"><input type="radio" name="tamanho" value="medio" id="radio-m">Médio</label>
+                        
+                        <label for="radio-g"><input type="radio" name="tamanho" value="grande" id="radio-g">Grande</label>
+                        
+                    </div>
+
+                <label class="idademargin" for="idadepet">Idade do Pet</label>
+                <input type="text" id="idadepet" class="input-padrao" required>
+
+                <div>
+                    <p class="servico">Qual serviço gostaria de agendar?</p>
+                    <select for="servico">
+                        <option>Banho</option>
+                        <option>Banho e tosa</option>
+                        <option>Banho e consulta</option>
+                    </select>
+                </div>
+
+
+                <p>Data: <input type="text" id="calendario" /></p>
+
+                <label for="comentarios">Comentários</label>
+                <textarea cols="70" rows="10" id="comentarios" class="input-padrao"></textarea>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+        </main>
+
+        <footer>
+
+
+        </footer>
+
+</html>

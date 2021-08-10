@@ -1,0 +1,67 @@
+.banner {
+    width: 100%;
+}
+
+header{
+    background: #e1f5ff;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+     }
+
+nav a {
+    text-transform: uppercase;
+    color:#f5a16c;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.1em 0.1em
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+em strong {
+    color: red
+}
+
+.principal {
+    background: #e1f5ff;
+    padding: 20px;
+}
+
+.banner_tarja {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin:10px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.mapa {
+    padding: 1em 0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
